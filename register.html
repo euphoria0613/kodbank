@@ -1,64 +1,40 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #7b2ff7, #2b65ff);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
 
-.register-box {
-  text-align: center;
-  color: white;
-}
+  <!-- Correct CSS Link -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-.register-box h1 {
-  font-size: 40px;
-  margin-bottom: 5px;
-}
+  <div class="register-box">
+    <h1>Get Started</h1>
+    <h3>Create Account</h3>
 
-.register-box h3 {
-  margin-top: 0;
-  font-weight: normal;
-}
+    <form id="registerForm">
+      <div class="input-group">
+        <input type="text" id="uname" placeholder="Full Name" required>
+      </div>
 
-.input-group {
-  margin: 15px 0;
-}
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
 
-input {
-  width: 320px;
-  padding: 14px;
-  border-radius: 30px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-}
+      <div class="input-group">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      </div>
 
-button {
-  width: 200px;
-  padding: 12px;
-  margin-top: 15px;
-  border-radius: 25px;
-  border: none;
-  background: #9f7aea;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
+      <button type="submit" id="registerBtn">Sign up</button>
+    </form>
 
-button:hover {
-  background: #8b5cf6;
-}
+    <p class="login-text">
+      Already have an account? <a href="login.html">Log in</a>
+    </p>
+  </div>
 
-.login-text {
-  margin-top: 20px;
-  font-size: 14px;
-}
+  <script src="js/register.js"></script>
 
-.login-text a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
+</body>
+</html>
