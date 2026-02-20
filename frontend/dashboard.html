@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Kodbank</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">
+                🏦 Kod<span>bank</span>
+            </a>
+            <nav>
+                <span style="color: #667eea; font-weight: 500;" id="welcomeUser">Welcome!</span>
+                <button onclick="logout()" class="btn-logout" style="margin: 0;">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="dashboard-card">
+                <div class="welcome">
+                    <h1>🎉 Welcome to Your Dashboard!</h1>
+                    <p>Manage your finances with Kodbank</p>
+                </div>
+
+                <div id="alert" class="alert"></div>
+
+                <button id="checkBalanceBtn" class="btn btn-primary" onclick="checkBalance()">
+                    Check Balance
+                </button>
+
+                <div id="balanceSection" class="balance-section">
+                    <div class="balance-label">Your Balance is:</div>
+                    <div class="balance-amount" id="balanceAmount">
+                        <span class="balance-currency">₹</span>
+                        <span id="balanceValue">0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/confetti.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
